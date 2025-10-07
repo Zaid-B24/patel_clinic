@@ -1,12 +1,17 @@
 // import ThemeToggler from "./ThemeToggler";
 
+import Image from "next/image";
+
 const Navbar = () => {
   return (
     <header className="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-        <div className="text-2xl font-bold text-blue-600">
-          Dr. Patel Hospital
-        </div>
+        <div className="flex items-center space-x-4">
+      <Image src="/logo.png" width={40} height={40} alt="Dr. Patel Hospital Logo" />
+      <div className="text-2xl font-bold text-blue-600">
+        Dr. Patel Hospital
+      </div>
+    </div>
         {/* <ThemeToggler /> */}
         <div className="hidden md:flex space-x-6">
           <a href="#doctors" className="text-gray-600 hover:text-blue-500">Our Doctors</a>
