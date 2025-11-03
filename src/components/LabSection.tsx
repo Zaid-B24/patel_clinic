@@ -8,14 +8,14 @@ const LabSection = () => {
         <div className="text-center mb-16">
           
           <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-            <Image src={'/patho.jpg'} height={100} width={100} alt='logo'/>
+            <Image src={'/patho.jpg'} height={100} width={100} alt='Dr. Patel Pathology Lab Logo'/>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Dr. Patel Pathology Lab
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Accurate diagnostics with state-of-the-art equipment, led by expert pathologist Dr. Nida Patel.
-          </p>
+  Accurate diagnostics with state-of-the-art equipment, led by expert pathologist <span className="whitespace-nowrap font-semibold">Dr. Nida Patel.</span>
+</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -24,9 +24,9 @@ const LabSection = () => {
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Microscope className="w-7 h-7 text-white" />
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Modern Equipment
-              </h4>
+              </h3>
               <p className="text-gray-600 leading-relaxed">
                 Ensuring precise and reliable results with cutting-edge technology.
               </p>

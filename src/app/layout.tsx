@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Patel Hospital",
-  description: "A Medical marvel",
+  title: "Dr. Patel Hospital | Consultant Physician & Pathology Lab",
+  description: "Dr. Patel Hospital, a leading clinic and pathology lab specializing in respiratory health, allergies, and expert diagnostics with free home sample collection.",
 };
 
 export default function RootLayout({

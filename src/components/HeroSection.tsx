@@ -23,8 +23,10 @@ const HeroSection = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3"></div>
 
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-24 lg:pb-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      {/* CHANGED: pt-24 -> pt-20 */}
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 lg:pt-20 lg:pb-24">
+        {/* CHANGED: Removed items-center */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start"> 
           <div
             className={`space-y-8 transition-all duration-1000 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
@@ -33,13 +35,13 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-gray-900 via-blue-600 to-gray-900 bg-clip-text text-transparent">
-                   Care that 
+                  Dr. Patel Hospital
                 </span>
-                <span className="block text-gray-800">goes beyond medicine</span>
+                <span className="block text-gray-800">Consultant Physician & Pathology Lab</span>
               </h1>
 
               <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                Specializing in Respiratory Health, Allergies, and General Medicine with state-of-the-art facilities and a dedicated team of healthcare professionals committed to your well-being.
+                Specializing in Respiratory Health, Allergies, and General Medicine. Experience care that goes beyond medicine with our dedicated team.
               </p>
             </div>
 
@@ -65,7 +67,7 @@ const HeroSection = () => {
               </a>
             </div>
 
-            <div className="pt-8 border-t border-gray-200">
+            {/* <div className="pt-8 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-4">Trusted by leading healthcare organizations</p>
               <div className="flex items-center space-x-4">
                 <div className="flex -space-x-2">
@@ -83,11 +85,12 @@ const HeroSection = () => {
                   <p className="text-gray-500">This month alone</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
+          {/* ADDED: pt-12 to push the box down */}
           <div
-            className={`relative transition-all duration-1000 delay-300 ${
+            className={`relative pt-5 transition-all duration-1000 delay-300 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'
             }`}
           >
@@ -130,7 +133,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+      {/* REMOVED: the bottom fade-out div */}
+      {/* <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div> */}
     </section>
   );
 };

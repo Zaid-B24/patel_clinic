@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { UserRound } from 'lucide-react';
 
 
 const doctors = [
@@ -38,7 +39,7 @@ const DoctorsSection = () => {
   >
     
     {/* 1. Bigger Image */}
-    <div className="relative w-40 h-40 mx-auto mb-5">
+    {/* <div className="relative w-40 h-40 mx-auto mb-5">
       <Image
         src={doctor.image}
         alt={doctor.name}
@@ -46,7 +47,12 @@ const DoctorsSection = () => {
         objectFit="cover"
         className="rounded-full shadow-md"
       />
-    </div>
+    </div> */}
+    <div className="relative w-40 h-40 mx-auto mb-5 flex items-center justify-center">
+  <div className="w-full h-full rounded-full bg-gray-100 flex items-center justify-center shadow-md">
+    <UserRound className="w-24 h-24 text-gray-400" />
+  </div>
+</div>
     
     <div className="flex-grow">
       <h3 className="text-xl font-bold text-blue-600">{doctor.name}</h3>
