@@ -111,7 +111,7 @@ const ContactSection = () => {
       className="inline-flex items-center gap-2 text-red-600 hover:text-red-800 font-medium transition-colors group"
     >
       <span className="group-hover:translate-x-1 transition-transform">
-        1234 567 890
+        8806911911
       </span>
     </a>
   </div>

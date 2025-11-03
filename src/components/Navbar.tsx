@@ -66,7 +66,7 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center space-x-6">
             <a
-              href="tel:+1234567890"
+              href="tel:+91 8806911911"
               className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors duration-300 group"
             >
               <div className="p-2 rounded-full bg-blue-50 group-hover:bg-blue-100 transition-colors duration-300">
@@ -117,7 +117,7 @@ const Navbar = () => {
             ))}
             <div className="pt-4 space-y-3">
               <a
-                href="tel:+1234567890"
+                href="tel:+91 8806911911"
                 className="flex items-center justify-center space-x-2 px-4 py-3 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 font-medium text-sm transition-all duration-300"
               >
                 <Phone className="w-4 h-4" />
