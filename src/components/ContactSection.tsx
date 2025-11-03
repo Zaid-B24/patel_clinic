@@ -107,7 +107,7 @@ const ContactSection = () => {
   <div>
     <p className="text-sm text-gray-500 mb-2">Emergency Contact</p>
     <a
-      href="tel:1234567890"
+      href="tel:8806911911"
       className="inline-flex items-center gap-2 text-red-600 hover:text-red-800 font-medium transition-colors group"
     >
       <span className="group-hover:translate-x-1 transition-transform">
