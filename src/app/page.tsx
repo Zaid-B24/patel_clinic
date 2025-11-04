@@ -1,6 +1,7 @@
 import ContactSection from "@/components/ContactSection";
 import DoctorsSection from "@/components/DoctorsSection";
 import Footer from "@/components/Footer";
+import GallerySection from "@/components/GallerySection";
 import HeroSection from "@/components/HeroSection";
 import LabSection from "@/components/LabSection";
 import Navbar from "@/components/Navbar";
@@ -16,6 +17,7 @@ export default function Home() {
     <DoctorsSection />
     <ServicesSection />
     <LabSection />
+    <GallerySection />
     <ReviewsSection />
     <ContactSection />
     <Footer />
